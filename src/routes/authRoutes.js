@@ -14,7 +14,7 @@ const router = express.Router()
   params:none
   isProtected:true (to be accessed only by the ADMIN)
 */
-router.get('/users',async(req,res)=>{
+router.get('/users',isAdmin,async(req,res)=>{
     try{
         const users = await User.find({})
         res.json({
