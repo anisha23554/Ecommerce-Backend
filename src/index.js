@@ -18,6 +18,7 @@ import cors from 'cors'
 
 const app = express()
 const PORT = process.env.PORT || 6000
+console.log('hello')
 
 connectdb()
 
@@ -28,6 +29,9 @@ app.use('/api/v1/auth',authRoutes)
 app.use('/api/v1/category',categoryRoutes)
 app.use('/api/v1/product',productRoutes)
 
+app.get('/',(req,res)=>{
+  res.send(`Server running at ${PORT}`)
+})
 app.listen(PORT,(req,res)=>{
     console.log("server listening at PORT",PORT)
   }
