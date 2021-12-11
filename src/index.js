@@ -18,7 +18,7 @@ import cors from 'cors'
 
 const app = express()
 const PORT = process.env.PORT || 6000
-console.log('hello')
+
 
 connectdb()
 
