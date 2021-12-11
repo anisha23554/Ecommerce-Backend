@@ -19,7 +19,7 @@ jobs:
       - name: Add github email
         run: git config --global user.email 'dawaranisha52@gmail.com'
       - name: Add heroku remote
-        run: git remote add heroku https://89115c16-bd2c-4f22-840d-9ae5f61661d4git.heroku.com/anisha-recipe-api.git
+        run: git remote add heroku https://89115c16-bd2c-4f22-840d-9ae5f61661d4@git.heroku.com/anisha-recipe-api.git
       - name: Fetch repo
         run: git fetch --unshallow  
       - name: Push to heroku remote
