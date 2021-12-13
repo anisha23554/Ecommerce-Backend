@@ -30,7 +30,7 @@ app.use('/api/v1/category',categoryRoutes)
 app.use('/api/v1/product',productRoutes)
 
 app.get('/',(req,res)=>{
-  res.send(`Server running at ${PORT} (Deployed from workflow with secrets!)`)
+  res.send(`Server running at ${PORT} (Deployed from workflow with secrets!!)`)
 })
 
 app.listen(PORT,(req,res)=>{
